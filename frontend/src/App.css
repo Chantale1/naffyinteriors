@@ -1,0 +1,341 @@
+
+.my-tabs {
+    margin-top: 20px; 
+}
+
+.tab-content {
+    padding: 20px; 
+}
+
+.nav-tabs {
+    border-bottom: none; 
+}
+
+.nav-tabs .nav-link {
+    border: none; 
+    border-radius: 0; 
+    color: #000; 
+    background-color: transparent; 
+}
+
+.nav-tabs .nav-link.active {
+    font-weight: bold; 
+    background-color: #f0f0f0; 
+}
+
+
+.home {
+    /* Set background image and other styles as needed */
+    background-color: #f0f0f0; /* Example background color */
+    padding: 50px; /* Example padding */
+  }
+  
+  .hero {
+    background-color: #fff; /* Example background color for hero section */
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .company-info {
+    background-color: #fff; /* Example background color for company info section */
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .company-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .company-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .home-experience {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff; /* Example background color for experience section */
+    padding: 20px;
+  }
+  
+  .h-years,
+  .h-s-project,
+  .h-a-project {
+    text-align: center;
+  }
+  
+  .h-years p,
+  .h-s-project p,
+  .h-a-project p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+
+  .about {
+    padding: 50px;
+    background-color: #f9f9f9; /* Light background color */
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .about-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-header p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .quotes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .pattern {
+    width: 50px;
+    height: 200px;
+    background-color: #CDA274; /* Accent color */
+  }
+  
+  .pattern.first {
+    transform: rotate(45deg);
+  }
+  
+  .pattern.second {
+    transform: rotate(-45deg);
+  }
+  
+  .content {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for the content */
+  }
+  
+  .content h1 {
+    font-size: 3rem;
+    color: #CDA274; /* Accent color */
+  }
+  
+  .comment {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .author {
+    margin-top: 10px;
+    font-style: italic;
+  }
+  
+  .about-concept {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .con {
+    flex: 0 0 48%;
+  }
+  
+  .c-text {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for each section */
+  }
+  
+  .c-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .c-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .creative-pro {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for the creative-pro section */
+    margin-bottom: 30px;
+  }
+  
+  .creative-pro h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .creative-pro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .creMailBox {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .cre-text textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .cre-send button {
+    background-color: #CDA274;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .cre-send button:hover {
+    background-color: #b58958;
+  }
+  
+  .history {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for the history section */
+    margin-bottom: 30px;
+  }
+  
+  .history h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .history p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .get-in-touch {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for the get-in-touch section */
+  }
+  
+  .get-in-touch h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .get-in-touch p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .contact-info {
+    margin-top: 20px;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contact-links a {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .contact-links a:hover {
+    text-decoration: underline;
+  }
+  
+
+
+  .reviews {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .reviews h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .review {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+  }
+  
+  .review:last-child {
+    border-bottom: none;
+  }
+  
+  .review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .review-header h3 {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .rating {
+    color: #ffc107;
+    font-size: 18px;
+  }
+  
+  .rating span {
+    margin-right: 5px;
+  }
+  
+  /* ServicesCarousel.css */
+.carousel {
+    max-height: 500px; /* Adjust the max height as needed */
+  }
+  
+  .carousel-item {
+    text-align: center; /* Center align carousel items */
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for caption */
+    color: #fff; /* White text color */
+    padding: 20px;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 24px;
+  }
+  
+  .carousel-caption p {
+    font-size: 18px;
+  }
+  
+  
