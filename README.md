@@ -82,4 +82,4 @@ For any questions, feedback, or inquiries, please contact us:
 - LinkedIn: [Naffy Interiors](https://www.linkedin.com/company/naffyinteriors)
 
 
-[![Video Title](https://flonnect.com/video  10e3f1ce40ff-47f9-b0be-7eb32566c1e1)]
+[![Video Title](https://dfw25j7e2vqby.cloudfront.net/shantelenos99/Flonnect_2024-06-18_429474a9-501e-4357-84cf-096a5adf4ca2)]
