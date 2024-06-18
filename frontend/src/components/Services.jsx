@@ -2,23 +2,22 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 const carouselItems = [
   {
     id: 1,
-    image: '/home/chantale/Naffy Interiors/frontend/src/components/Images/service1.jpg',
+    image: 'https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=600',
     title: 'Residential Design',
     description: 'Create beautiful residential spaces tailored to your needs.'
   },
   {
     id: 2,
-    image: '/home/chantale/Naffy Interiors/frontend/src/components/Images/service2.jpg',
+    image: 'https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=600',
     title: 'Hospitality Design',
-    description: 'Design functional and appealing spaces for hospitality industry.'
+    description: 'Design functional and appealing spaces for the hospitality industry.'
   },
   {
     id: 3,
-    image: '/home/chantale/Naffy Interiors/frontend/src/components/Images/service3.jpg',
+    image: 'https://images.pexels.com/photos/37347/office-sitting-room-executive-sitting.jpg?auto=compress&cs=tinysrgb&w=600',
     title: 'Office Design',
     description: 'Transform office spaces into productive environments.'
   }

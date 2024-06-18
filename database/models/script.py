@@ -1,25 +1,57 @@
+import sys
+import os
+from datetime import datetime
 
-from review import Review
+# Assuming script.py is located in models directory
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+sys.path.append(parent_dir)
+
 from models.services import Service
+from models.review import Review
 
-# Drop and recreate tables
-Review.drop_table()
-Review.create_table()
-Service.drop_table()
-Service.create_table()
+def main():
+    # Drop and recreate tables
+    Review.drop_table()
+    Review.create_table()
+    Service.drop_table()
+    Service.create_table()
 
-# Insert sample reviews
-Review.insert_review("John Doe", 4, "Great service and excellent results.", "2024-06-12 12:00:00")
-Review.insert_review("Alice Smith", 5, "Very satisfied with the interior design!", "2024-06-13 13:00:00")
-Review.insert_review("Bob Johnson", 3, "Average experience, could be better.", "2024-06-14 14:00:00")
-Review.insert_review("Emily Davis", 4, "Professional service and good communication.", "2024-06-15 15:00:00")
-Review.insert_review("Michael Brown", 5, "Impressed with the attention to detail.", "2024-06-16 16:00:00")
+    # Insert sample reviews
+    review1 = Review("John Doe", 4, "Great service and excellent results.", datetime(2024, 6, 12, 12, 0, 0))
+    review1.save()
 
-# Insert sample services
-Service.insert_service("Residential Design")
-Service.insert_service("Commercial Office Renovation")
-Service.insert_service("Home Staging")
-Service.insert_service("Interior Decor Consultation")
-Service.insert_service("Custom Furniture Design")
+    review2 = Review("Alice Smith", 5, "Very satisfied with the interior design.", datetime(2024, 6, 13, 13, 0, 0))
+    review2.save()
 
-print("Reviews and services data inserted.")
+    review3 = Review("Bob Johnson", 3, "Average experience, could be better.", datetime(2024, 6, 14, 14, 0, 0))
+    review3.save()
+
+    review4 = Review("Emily Davis", 4, "Professional service and good communication.", datetime(2024, 6, 15, 15, 0, 0))
+    review4.save()
+
+    review5 = Review("Michael Brown", 5, "Impressed with the attention to detail.", datetime(2024, 6, 16, 16, 0, 0))
+    review5.save()
+
+    print("Reviews data inserted.")
+
+    # Insert sample services
+    service1 = Service("Residential Design")
+    service1.save()
+
+    service2 = Service("Commercial Office Renovation")
+    service2.save()
+
+    service3 = Service("Home Staging")
+    service3.save()
+
+    service4 = Service("Interior Decor Consultation")
+    service4.save()
+
+    service5 = Service("Custom Furniture Design")
+    service5.save()
+
+    print("Services data inserted.")
+
+if __name__ == "__main__":
+    main()

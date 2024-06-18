@@ -67,12 +67,3 @@ class Service:
         finally:
             if conn:
                 conn.close()
-
-# Usage example:
-if __name__ == "__main__":
-    Service.create_table()
-    service1 = Service("Residential Design")
-    service1.save()
-    services = Service.fetch_all_services()
-    print("All services:", services)
-
