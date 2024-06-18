@@ -29,7 +29,7 @@ function About () {
             <h2>Who Are We?</h2>
             <p>
               Naffy Interiors is a premier interior design and consultancy firm
-              based in [Location], founded by [Founder's Name]. We specialize in
+              based in Industrial Area, founded by Mitchelle Nafula. We specialize in
               creating unique and personalized interior spaces that reflect our
               clients' vision and lifestyle.
             </p>
@@ -39,7 +39,7 @@ function About () {
           <div className="c-text">
             <h2>What We Do?</h2>
             <p>
-              With over [Years of Experience] years of experience in the
+              With over fifteen years of experience in the
               industry, we offer comprehensive interior design services for
               residential, commercial, and hospitality sectors. Our services
               range from conceptual design to project execution, ensuring
@@ -72,9 +72,8 @@ function About () {
       <div className="history">
         <h2>History</h2>
         <p>
-          Naffy Interiors has been shaping interior spaces since [Year of
-          Establishment], bringing innovation and elegance to residential and
-          commercial projects across [Location]. Our team's expertise and
+          Naffy Interiors has been shaping interior spaces since 2010, bringing innovation and elegance to residential and
+          commercial projects across Kenya. Our team's expertise and
           dedication have earned us a reputation for excellence and client
           satisfaction.
         </p>
@@ -89,7 +88,7 @@ function About () {
           <h3>Naffy Interiors</h3>
           <div className="contact-links">
             <a href="tel:+1234567890">+1 (234) 567-890</a>
-            <a href="mailto:info@naffyinteriors.com">info@naffyinteriors.com</a>
+            <a href="mailto:info@naffyinteriors.com">@naffyinteriors@gmail.com</a>
           </div>
         </div>
       </div>

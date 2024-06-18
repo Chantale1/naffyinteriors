@@ -317,16 +317,16 @@
   
   /* ServicesCarousel.css */
 .carousel {
-    max-height: 500px; /* Adjust the max height as needed */
+    max-height: 500px; 
   }
   
   .carousel-item {
-    text-align: center; /* Center align carousel items */
+    text-align: center; 
   }
   
   .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for caption */
-    color: #fff; /* White text color */
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff; 
     padding: 20px;
   }
   
@@ -338,4 +338,7 @@
     font-size: 18px;
   }
   
-  
+  .carousel-item img {
+    height: 600px; 
+    object-fit: cover; 
+    }

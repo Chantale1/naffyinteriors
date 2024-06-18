@@ -22,7 +22,7 @@ const reviewsData = [
   }
 ];
 
-// Reviews component
+
 const Reviews = () => {
   return (
     <div className="reviews">
