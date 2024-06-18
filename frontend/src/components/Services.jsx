@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const carouselItems = [
   {
     id: 1,
-    image: 'https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: 'Photo by Pixabay from Pexels: https://www.pexels.com/photo/four-gray-bar-stools-in-front-of-kitchen-countertop-279648/',
     title: 'Residential Design',
     description: 'Create beautiful residential spaces tailored to your needs.'
   },
