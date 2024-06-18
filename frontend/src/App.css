@@ -24,57 +24,121 @@
 }
 
 
+/* Styles for Home Component */
+
 .home {
-    /* Set background image and other styles as needed */
-    background-color: #f0f0f0; /* Example background color */
-    padding: 50px; /* Example padding */
-  }
-  
-  .hero {
-    background-color: #fff; /* Example background color for hero section */
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-  
-  .company-info {
-    background-color: #fff; /* Example background color for company info section */
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .company-info h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  
-  .company-info p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
-  
-  .home-experience {
-    display: flex;
-    justify-content: space-around;
-    background-color: #fff; /* Example background color for experience section */
-    padding: 20px;
-  }
-  
-  .h-years,
-  .h-s-project,
-  .h-a-project {
-    text-align: center;
-  }
-  
-  .h-years p,
-  .h-s-project p,
-  .h-a-project p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-  }
+  background-color: #f0f0f0; /* Background color for the entire home component */
+  padding: 50px;
+}
+
+.hero {
+  background-color: #fff; /* Background color for hero section */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.company-info {
+  background-color: #fff; /* Background color for company info section */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.company-info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.company-info p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.home-experience {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff; /* Background color for experience section */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.h-years,
+.h-s-project,
+.h-a-project {
+  text-align: center;
+  flex: 1;
+}
+
+.h-years p,
+.h-s-project p,
+.h-a-project p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #666;
+}
+
+.contact {
+  background-color: #fff; /* Background color for contact section */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact ul li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
   
 
   .about {
@@ -277,12 +341,14 @@
     border: 1px solid #ccc;
     border-radius: 8px;
     margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
   }
   
   .reviews h2 {
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
+    text-align: center; /* Center align the heading */
   }
   
   .review {
@@ -304,39 +370,135 @@
   .review-header h3 {
     font-size: 18px;
     color: #555;
+    margin: 0; 
   }
   
   .rating {
-    color: #ffc107;
+    color: #ffc107; 
     font-size: 18px;
   }
   
   .rating span {
-    margin-right: 5px;
+    margin-right: 3px; 
   }
   
-  /* ServicesCarousel.css */
-.carousel {
-    max-height: 500px; 
-  }
-  
-  .carousel-item {
-    text-align: center; 
-  }
-  
-  .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5); 
-    color: #fff; 
+  form {
+    margin-top: 20px; 
     padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   }
   
-  .carousel-caption h3 {
-    font-size: 24px;
+  form h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
   }
   
-  .carousel-caption p {
-    font-size: 18px;
+  form label {
+    display: block;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
   }
+  
+  form input[type="text"],
+  form textarea,
+  form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .reviews {
+      padding: 15px;
+    }
+    
+    .review-header h3 {
+      font-size: 16px;
+    }
+    
+    .rating {
+      font-size: 16px;
+    }
+    
+    form {
+      padding: 15px;
+    }
+    
+    form button {
+      font-size: 14px;
+      padding: 10px 16px;
+    }
+  }
+  
+  
+  /* style.css */
+
+.services-carousel {
+  max-width: 800px; /* Adjust max-width as needed */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.service-details {
+  margin-top: 30px;
+}
+
+.service-detail {
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.service-detail h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service-detail p {
+  line-height: 1.6;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 10px;
+  bottom: 20px;
+  left: 20px;
+  width: auto;
+  max-width: calc(100% - 40px); /* Adjust as needed */
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
   
   .carousel-item img {
     height: 600px; 

@@ -1,9 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { BsArrowRight } from 'react-icons/bs';
 import CountUp from 'react-countup';
 
 const Home = () => {
+  const scrollToServices = () => {
+    document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="home">
       {/* Hero Section */}
@@ -26,6 +29,11 @@ const Home = () => {
           Our team of skilled designers and decorators are committed to delivering exceptional
           results, ensuring your satisfaction with every project we undertake.
         </p>
+        <p>
+          Whether you're looking to revamp a single room or undertake a complete home renovation,
+          Naffy Interiors provides personalized services to meet your needs and exceed your expectations.
+        </p>
+       
       </div>
 
       {/* Home Experience Section */}
@@ -43,11 +51,28 @@ const Home = () => {
           <p>Active Projects</p>
         </div>
       </div>
+
+      {/* Contact Section */}
+      <div className="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to transform your space? Contact us today!</p>
+        <ul>
+          <li>Email: naffyinteriors@gmail.com</li>
+          <li>Phone: +1-123-456-7890</li>
+          <li>Address: 123 Main Street, Nairobi, Kenya</li>
+        </ul>
+        <a href="/contact" className="btn">
+          Get in Touch <BsArrowRight />
+        </a>
+      </div>
+
     </div>
   );
 };
 
 export default Home;
+
+
 
 
 

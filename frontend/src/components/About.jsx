@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BsArrowRight } from 'react-icons/bs';
 
-function About () {
+function About() {
+  const [message, setMessage] = useState('');
+  const [isSent, setIsSent] = useState(false);
+
+  const handleMessageChange = (e) => {
+    setMessage(e.target.value);
+  };
+
+  const handleSend = () => {
+    // Here you could implement actual sending logic (e.g., API call)
+    // For demonstration, we'll just set a timeout to simulate sending
+    setTimeout(() => {
+      setIsSent(true);
+    }, 1000); // Simulate a delay of 1 second
+  };
+
   return (
     <div className="about">
       <div className="about-header">
@@ -56,17 +71,25 @@ function About () {
           discuss your project!
         </p>
         <div className="creMailBox">
-          <div className="cre-text">
-            <textarea
-              name="interested"
-              placeholder="Hello, I am interested in.."
-            ></textarea>
-          </div>
-          <div className="cre-send">
-            <button>
-              Send Now <BsArrowRight style={{ marginLeft: "5px" }} />
-            </button>
-          </div>
+          {!isSent ? (
+            <>
+              <div className="cre-text">
+                <textarea
+                  name="interested"
+                  placeholder="Hello, I am interested in.."
+                  value={message}
+                  onChange={handleMessageChange}
+                ></textarea>
+              </div>
+              <div className="cre-send">
+                <button onClick={handleSend}>
+                  Send Now <BsArrowRight style={{ marginLeft: "5px" }} />
+                </button>
+              </div>
+            </>
+          ) : (
+            <p style={{ marginTop: '10px', color: 'green' }}>Sent!</p>
+          )}
         </div>
       </div>
       <div className="history">
@@ -94,6 +117,7 @@ function About () {
       </div>
     </div>
   );
-};
+}
 
 export default About;
+
